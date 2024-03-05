@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300&display=swap" rel="stylesheet">
+        <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"> -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <title>A Couple of Cuckoos</title>
+        <style>
+            * {
+                font-family: 'Noto Sans', sans-serif;
+                margin: 0;
+                padding: 0;
+                transition: 0.4s;
+            }
+
+            body {
+                margin-top: 6%;
+                margin-left: 18%;
+                background: white;
+                color: black;
+            }
+
+            .main-container {
+                width: 65%;
+                float: left;
+            }
+
+            h2 {
+                color: #717171;
+            }
+
+            h1 {
+                font-size: 3em;
+            }
+
+            .btn-contain {
+                margin-top: 5px;
+            }
+
+            .btn {
+                background: #bbbbbb;
+                width: auto;
+                height: auto;
+                padding: 5px;
+                text-align: center;
+                margin: 5px;
+                border-radius: 20px;
+                font-size: 12px;
+            }
+
+            .btn:hover {
+                color: #000;
+                background: #FFF;
+                transition: 0.4s;
+                cursor: pointer;
+            }
+
+            .content {
+                margin-top: 5%;
+                font-size: 18px;
+                line-height: 25px;
+            }
+
+            .category {
+                margin-top: 5%;
+                background: #212121;
+                padding-top: 3%;
+                padding-bottom: 3%;
+                padding-left: 2%;
+                color: #FFF;
+                border-radius: 10px;
+            }
+
+            .category a {
+                color: #FFF;
+
+            }
+
+            .category a:hover {
+                text-decoration-color: #717171;
+            }
+
+            .category p {
+                margin: 20px;
+            }
+
+            .img-title img {
+                width: 100%;
+                border-radius: 10px;
+            }
+
+            .img-title {
+                width: 22%;
+                height: auto;
+                border-radius: 10px;
+                float: left;
+                margin-left: 10%;
+            }
+
+            .row:after {
+                content: "";
+                display: table;
+                clear: both;
+            }
+
+            .chapter-head {
+                float: left;
+                margin-top: 10%;
+            }
+
+            .sort-btn {
+                float: left;
+                margin-top: 12%;
+                margin-left: 55%;
+            }
+
+            .sort-btn input {
+                background: none;
+                color: #FFF;
+                border: none;
+                border-bottom: 1px solid #FFF;
+                font-size: 20px;
+                width: 40%;
+            }
+
+            .sort-btn #spanl {
+                background: #474747;
+                color: #FFF;
+                padding: 20px;
+                border-radius: 30px;
+                margin-left: 10px;
+            }
+
+            .sort-btn #spanl:hover {
+                background: #FFF;
+                color: #000;
+                padding: 20px;
+                border-radius: 30px;
+                transition: 0.4s;
+                cursor: pointer;
+            }
+
+            .chapter-option {
+                margin-top: 5%;
+                width: 100%;
+            }
+
+            .chapter {
+                background: #212121;
+                float: left;
+                margin: 10px;
+                width: 17%;
+                padding: 2%;
+                border-radius: 10px;
+                line-height: 30px;
+            }
+
+            .chapterd:hover {
+                background: #C4C4C4;
+                margin: 10px;
+                transition: 0.4s;
+                color: #000;
+                cursor: pointer;
+            }
+
+            .chapterd {
+                background: #212121;
+                color: #fff;
+                float: left;
+                margin: 10px;
+                width: 17%;
+                padding: 2%;
+                border-radius: 10px;
+                line-height: 30px;
+            }
+
+            .chapterl:hover {
+                background: #212121;
+                margin: 10px;
+                transition: 0.4s;
+                color: #fff;
+                cursor: pointer;
+            }
+
+            .chapterl {
+                background: #C4C4C4;
+                color: #000;
+                float: left;
+                margin: 10px;
+                width: 17%;
+                padding: 2%;
+                border-radius: 10px;
+                line-height: 30px;
+            }
+
+            .bottom-credit {
+                background: hsl(0, 0%, 10%);
+                padding: 3%;
+                margin-left: -23%;
+                color: white;
+                margin-top: 5%;
+            }
+
+            .copyright {
+                float: left;
+                width: 25%;
+            }
+
+            .link {
+                float: left;
+                width: 10%;
+                margin-left: 60%;
+            }
+
+            .link a {
+                margin-left: 15px;
+                color: #000;
+                text-decoration: none;
+            }
+
+            .link a:hover {
+                text-decoration: underline;
+            }
+
+            /* .nav-bar {
+                position: fixed;
+                margin-left: -18%;
+                margin-top: -5.5%;
+                padding: 2%;
+            } */
+
+            .menu {
+                width: 50%;
+                display: flex;
+                flex-direction: row;
+                float: left;
+            }
+
+            .menu a {
+                margin-left: 35%;
+                font-size: 16px;
+                font-weight: bold;
+                text-decoration: none;
+                color: #FFF;
+            }
+
+            /* .logo {
+                width: 50%;
+                height: auto;
+                margin: 5px 10px;
+            }
+
+            .logo img {
+                width: 100%;
+            } */
+
+            /* .mode {
+                position: fixed;
+                width: 25%;
+                float: left;
+                margin-left: 75%;
+                margin-top: -4%;
+            }
+
+            .mode button {
+                border: none;
+                background: none;
+                width: 8%;
+            }
+
+            .mode button img {
+                width: 100%;
+                border-radius: 50%;
+                filter: invert(100%);
+            }
+
+            .mode button img:hover {
+                filter: invert(0%);
+                transition: 0.4s;
+                cursor: pointer;
+            } */
+            i {
+                margin-left: 20%;
+            }
+
+            .hicon {
+                position: fixed;
+                margin-left: -16%;
+            }
+
+            .homeicond {
+                fill: white;
+            }
+
+            .homeicon {
+                fill: black;
+            }
+
+            .iconl {
+                color: #000;
+            }
+
+            .iconl:hover {
+                color: #fff
+            }
+
+            .icond {
+                color: #fff;
+            }
+
+            .icond:hover {
+                color: hsl(0, 0%, 10%);
+            }
+
+            .circle-iconl {
+                margin-left: 60%;
+                padding: 0.2%;
+                border-radius: 50%;
+
+            }
+
+            .circle-iconl:hover {
+                background: hsl(0, 0%, 10%);
+                padding: 0.8%;
+                border-radius: 50%;
+            }
+
+            .circle-icond:hover {
+                background: #fff;
+                padding: 0.8%;
+                border-radius: 50%;
+            }
+
+            .circle-icond {
+                padding: 0.2%;
+                border-radius: 50%;
+                margin-left: 60%;
+
+            }
+
+            .dark-mode {
+                background-color: hsl(0, 0%, 10%);
+                color: white;
+            }
+
+            ul {
+                position: fixed;
+                top: 0;
+                width: 100%;
+                list-style-type: none;
+                margin-left: -16%;
+                padding: 0;
+                overflow: hidden;
+            }
+
+            .light :hover {
+                color: black;
+            }
+
+            .dark a {
+                color: white;
+            }
+
+            li {
+                float: left;
+            }
+
+            li a {
+                display: block;
+                color: black;
+                padding: 14px 16px;
+                text-decoration: none;
+            }
+
+            li a:hover {
+                text-decoration: underline;
+            }
+        </style>
+    </head>
+
+    <body>
+        <ul><br>
+            <li class="light" id="nav"><a href="/index.html">Home</a></li>
+            <li class="light" id="nav1"><a href="/discover.html">Discover</a></li>
+            <li class="light" id="nav2"><a href="/about.html">About</a></li>
+            <li class="light" id="nav3"><a href="#about">Discord</a></li>
+            <i id="search" class="bi bi-search circle-iconl iconl" style="cursor:pointer;" animation="throb"></i>
+            <i id="screenmode" class="bi bi-moon circle-iconl iconl" onclick="darkmode()"
+                style="cursor:pointer;margin-left:2%;" animation="throb"></i>
+        </ul>
+        <a class="hicon" href="/index.html" style="cursor:pointer;">
+            <svg>
+                <path id="homei" class="homeicon"
+                    d="M57.192 36.691c-1.344.232-2.616.55-3.785.906-.658.2-3.258.995-6.567 2.69 0 0-.95.486-1.872 1.017-6.905 3.975-12.915 11.81-19.835 11.958-4.732.101-7.836-2.119-7.836-2.119a10.56 10.56 0 01-1.994-1.852c.148.11 2.58 1.846 5.304 2.485 4.009.94 9.695-2.557 11.425-3.643 2.08-1.305 1.59-1.312 5.774-4.195a123.864 123.864 0 015.546-3.596c.782-.479 1.446-.863 1.626-.966 1.398-.804 4.684-2.243 12.214-2.685zm-25.787-25.78s-1.76 1.825-3.386 2.152c-1.538.309-3.808-.628-3.808-.628s1.446-1.959 3.041-2.357c1.81-.45 4.153.832 4.153.832zm-8.189 8.294c.183-1.603 1.306-2.928 2.802-3.331 2.467-.66 4.267 1.638 4.236 1.692-.03.054-1.934-1.724-3.941-1.302-1.499.315-2.486 1.737-3.097 2.941zm.079.495c.545-1.52 1.938-2.556 3.484-2.607 2.55-.085 3.786 2.563 3.744 2.607-.041.045-1.496-2.115-3.544-2.159-1.531-.035-2.815 1.128-3.684 2.159zm0 .445c.986-1.277 2.631-1.832 4.118-1.401 2.45.708 2.808 3.608 2.755 3.64-.064 0-.777-2.48-2.704-3.154-1.446-.505-3.024.204-4.17.915zM10.047 71.304c5.176 3.064 10.547 2.765 13.451 2.604 2.8-.156 5.057-.674 10.272-2.54.511-.186 1.053-.382 1.626-.593l.167-.062a285.915 285.915 0 004.271-1.613c2.057-.797 3.86-1.524 5.46-2.18 1.015-.416 1.95-.803 2.817-1.16 4.013-1.661 6.589-2.705 9.094-3.112 1.29-.207 2.558-.248 3.994-.117.824.072 1.797.212 2.904.481.108.026.22.055.33.083.466.124.957.268 1.467.442 1.63.552 3.463 1.384 5.444 2.645 1.389-.74 3.776-2.255 5.706-5.03.53-.761 4.236-6.265 2.482-12.807-.61-2.282-1.733-4.13-3.02-5.6-1.174-1.344-2.483-2.377-3.652-3.145 0-.003-.004-.003-.004-.003a20.758 20.758 0 00-3.242-1.73c-2.056-.892-4.157-1.353-6.209-1.509a61.278 61.278 0 00-.83-2.566 56.212 56.212 0 00-4.442-9.66c-.89-1.536-4.837-8.157-12.364-14.765A63.239 63.239 0 0031.66 0s-.678 3.168 0 5.515a20.39 20.39 0 00-3.925.756c-1.607.48-2.456.744-3.287 1.55-.501.482-1.306 1.267-1.468 2.419-.095.71.07 1.414-.393 2.306-.073.14-.187.356-.4.59-.561.636-1.175.7-1.86 1.035 0 0-.92.452-1.545 1.27-1.267 1.655.298 5.469 2.495 7.66.77.768 2.258 2.251 3.935 2.172.336-.016.922-.108 1.795-.006.573.069 1.31.155 1.88.495.05.03.1.062.149.097 1.27.887 1.879 3.16 1.04 4.783-.6 1.16-1.745 1.614-2.379 1.865a4.991 4.991 0 01-1.673.355c-.717.038-1.553-.024-2.765-.076-1.426-.064-2.853-.02-4.28-.08-3.469-.149-8.226 1.753-11.625 4.525C.726 42.642.11 50.696.037 51.918c-.475 7.875 3.618 15.601 10.01 19.386">
+                </path>
+            </svg>
+        </a>
+        </div>
+
+        <div class="row">
+            <div class="main-container">
+                <div class="title-contain" id="title-contain">
+                    <!--<h2>Another Title Name</h2>
+                    <h1>Alya, Who Sits Next to Me, Sometimes Whispers Sweet Nothings in Russian</h1> -->
+                </div>
+                <div class="btn-contain" id="genre-btn">
+                    <!--<span class="btn">Action</span>
+                    <span class="btn">Romance</span>
+                    <span class="btn">Historical</span>
+                    <span class="btn">genre</span>-->
+                </div>
+
+                <div class="content" id="detail">
+                    <!--Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, eveniet dicta rerum cupiditate
+                    deserunt consequatur delectus eligendi exercitationem dignissimos, cumque accusantium quaerat totam
+                    non.
+                    Vel
+                    mollitia eligendi fugit cupiditate in, eos error laboriosam quidem. Neque quis tempore voluptatem
+                    culpa
+                    iure. Odio sequi est perferendis fugit doloremque nisi quod maxime explicabo. -->
+                </div>
+
+                <div class="category">
+                    <p id="author"><b>Author / Artist &ensp;</b></p>
+                    <p id="group"><b>Brought to you by &ensp;</b></p>
+                    <p id="status"><b>Status &ensp;</b></p>
+                </div>
+            </div>
+
+            <div class="img-title" id="img-title">
+                <img src="img/A Couple of Cuckoos.jpg">
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="chapter-head">
+                <h1>Chapter</h1>
+            </div>
+
+            <div class="sort-btn">
+                <input type="text" placeholder="Jump to..." id="jump-to">
+                <span id="spanl">Sort</span>
+            </div>
+        </div>
+
+        <div class="chapter-option">
+            <div class="row">
+                <a href="mangacontent/acoupleofcuckoosfirst.html">
+                    <div id="chap" class="chapterl">
+                        <h2>Chapter 5</h2>
+                        <p>The Girlfriend and Paradise.</p>
+                    </div>
+                </a>
+
+                <a href="mangacontent/acoupleofcuckoossecon.html">
+                    <div id="chap1" class="chapterl">
+                        <h2>Chapter 4</h2>
+                        <p>The Girlfriend and Paradise.</p>
+                    </div>
+                </a>
+
+                <div id="chap2" class="chapterl">
+                    <h2>Chapter 3</h2>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                </div>
+
+                <div id="chap3" class="chapterl">
+                    <h2>Chapter 2</h2>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div id="chap4" class="chapterl">
+                    <h2>Chapter 1</h2>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="bottom-credit" id="credit">
+            <div class="row">
+                <div class="copyright">
+                    copyright © 2021
+                </div>
+                <div class="link">
+                    <a href="#">About</a>
+                    <a href="#">Discord</a>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            let requestURL = 'manga.json';
+            let request = new XMLHttpRequest();
+            request.onreadystatechange = function () {
+                if (request.readyState == 4 && request.status == 200) {
+                    mangaInfo(JSON.parse(request.responseText));
+                }
+            };
+            request.open("GET", requestURL, true);
+            request.send();
+
+            function mangaInfo(data) {
+                var content = data.content;
+                var parent, h2, h1, span;
+
+                parent = document.getElementById("title-contain");
+                h2 = document.createElement("h2");
+                var anotherTitle = document.createTextNode(content[0].anotherTitle[0]);
+                h2.appendChild(anotherTitle);
+                parent.appendChild(h2);
+
+                h1 = document.createElement("h1");
+                var title = document.createTextNode(content[0].title);
+                h1.appendChild(title);
+                parent.appendChild(h1);
+                document.getElementById("detail").innerHTML = content[0].detail;
+
+                parent = document.getElementById("genre-btn");
+                for (let i = 0; i < content[0].genre.length; i++) {
+                    span = document.createElement("span");
+                    span.setAttribute("class", "btn");
+
+                    var genre = document.createTextNode(content[0].genre[i]);
+                    span.appendChild(genre);
+                    parent.appendChild(span);
+                }
+
+                parent = document.getElementById("author");
+                for (let i = 0; i < content[0].author.length; i++) {
+                    var aLink = document.createElement("a");
+                    aLink.setAttribute("href", "#");
+
+                    var artist = document.createTextNode(content[0].author[i]);
+                    aLink.appendChild(artist);
+                    parent.appendChild(aLink);
+                    if (i != content[0].author.length - 1) {
+                        artist += ", ";
+                    }
+                }
+
+                parent = document.getElementById("group");
+                for (let i = 0; i < content[0].group.length; i++) {
+                    aLink = document.createElement("a");
+                    aLink.setAttribute("href", "#");
+
+                    var group = document.createTextNode(content[0].group[i]);
+                    aLink.appendChild(group);
+                    parent.appendChild(aLink);
+                    if (i != content[0].group.length - 1) {
+                        document.getElementById("group").innerHTML += ", ";
+                    }
+                }
+
+                document.getElementById("status").innerHTML += content[0].status;
+
+            }
+
+            function darkmode() {
+                //to do :homeicon,checkitout
+                var element = document.body;
+                element.classList.toggle("dark-mode");
+                var dm = document.getElementById("screenmode").className;
+                if (dm == "bi bi-moon circle-iconl iconl") {
+                    document.getElementById("screenmode").className = "bi bi-lightbulb circle-icond icond";
+                    document.getElementById("search").className = "bi bi-search circle-icond icond";
+                    document.getElementById("nav").className = "dark";
+                    document.getElementById("nav1").className = "dark";
+                    document.getElementById("nav2").className = "dark";
+                    document.getElementById("nav3").className = "dark";
+                    document.getElementById("homei").style.fill = "white";
+                    document.getElementById("credit").style.background = "white";
+                    document.getElementById("credit").style.color = "black";
+                    document.getElementById("chap").className = "chapterd";
+                    document.getElementById("chap1").className = "chapterd";
+                    document.getElementById("chap2").className = "chapterd";
+                    document.getElementById("chap3").className = "chapterd";
+                    document.getElementById("chap4").className = "chapterd";
+                }
+                else {
+                    document.getElementById("screenmode").className = "bi bi-moon circle-iconl iconl";
+                    document.getElementById("search").className = "bi bi-search circle-iconl iconl";
+                    document.getElementById("nav").className = "light";
+                    document.getElementById("nav1").className = "light";
+                    document.getElementById("nav2").className = "light";
+                    document.getElementById("nav3").className = "light";
+                    document.getElementById("homei").style.fill = "black";
+                    document.getElementById("credit").style.background = "hsl(0, 0%, 10%)";
+                    document.getElementById("credit").style.color = "white";
+                    document.getElementById("chap").className = "chapterl";
+                    document.getElementById("chap1").className = "chapterl";
+                    document.getElementById("chap2").className = "chapterl";
+                    document.getElementById("chap3").className = "chapterl";
+                    document.getElementById("chap4").className = "chapterl";
+
+                }
+            }
+
+        </script>
+    </body>
+
+</html>

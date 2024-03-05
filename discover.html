@@ -1,0 +1,439 @@
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+        <title>Discover - CatManga</title>
+        <link rel="shortcut icon" href="img/logo.png">
+
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+        <!-- Link Swiper's CSS -->
+        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+        <link rel="stylesheet" href="discustom.css">
+        <script src="request.js"></script>
+        <!-- CDN -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+
+    <body onload="a_zsort(0)">
+        <ul><br>
+            <li class="light" id="nav"><a href="index.html">Home</a></li>
+            <li class="light" id="nav1"><a href="discover.html">Discover</a></li>
+            <li class="light" id="nav2"><a href="about.html">About</a></li>
+            <li class="light" id="nav3"><a href="#discord">Discord</a></li>
+            <i id="search" class="bi bi-search circle-iconl iconl" style="cursor:pointer;" animation="throb"></i>
+            <i id="screenmode" class="bi bi-moon circle-iconl iconl" onclick="darkmode()"
+                style="cursor:pointer;margin-left:2%;" animation="throb"></i>
+        </ul>
+        <a class="hicon" href="index.html" style="cursor:pointer;">
+            <svg>
+                <path id="homei" class="homeicon"
+                    d="M57.192 36.691c-1.344.232-2.616.55-3.785.906-.658.2-3.258.995-6.567 2.69 0 0-.95.486-1.872 1.017-6.905 3.975-12.915 11.81-19.835 11.958-4.732.101-7.836-2.119-7.836-2.119a10.56 10.56 0 01-1.994-1.852c.148.11 2.58 1.846 5.304 2.485 4.009.94 9.695-2.557 11.425-3.643 2.08-1.305 1.59-1.312 5.774-4.195a123.864 123.864 0 015.546-3.596c.782-.479 1.446-.863 1.626-.966 1.398-.804 4.684-2.243 12.214-2.685zm-25.787-25.78s-1.76 1.825-3.386 2.152c-1.538.309-3.808-.628-3.808-.628s1.446-1.959 3.041-2.357c1.81-.45 4.153.832 4.153.832zm-8.189 8.294c.183-1.603 1.306-2.928 2.802-3.331 2.467-.66 4.267 1.638 4.236 1.692-.03.054-1.934-1.724-3.941-1.302-1.499.315-2.486 1.737-3.097 2.941zm.079.495c.545-1.52 1.938-2.556 3.484-2.607 2.55-.085 3.786 2.563 3.744 2.607-.041.045-1.496-2.115-3.544-2.159-1.531-.035-2.815 1.128-3.684 2.159zm0 .445c.986-1.277 2.631-1.832 4.118-1.401 2.45.708 2.808 3.608 2.755 3.64-.064 0-.777-2.48-2.704-3.154-1.446-.505-3.024.204-4.17.915zM10.047 71.304c5.176 3.064 10.547 2.765 13.451 2.604 2.8-.156 5.057-.674 10.272-2.54.511-.186 1.053-.382 1.626-.593l.167-.062a285.915 285.915 0 004.271-1.613c2.057-.797 3.86-1.524 5.46-2.18 1.015-.416 1.95-.803 2.817-1.16 4.013-1.661 6.589-2.705 9.094-3.112 1.29-.207 2.558-.248 3.994-.117.824.072 1.797.212 2.904.481.108.026.22.055.33.083.466.124.957.268 1.467.442 1.63.552 3.463 1.384 5.444 2.645 1.389-.74 3.776-2.255 5.706-5.03.53-.761 4.236-6.265 2.482-12.807-.61-2.282-1.733-4.13-3.02-5.6-1.174-1.344-2.483-2.377-3.652-3.145 0-.003-.004-.003-.004-.003a20.758 20.758 0 00-3.242-1.73c-2.056-.892-4.157-1.353-6.209-1.509a61.278 61.278 0 00-.83-2.566 56.212 56.212 0 00-4.442-9.66c-.89-1.536-4.837-8.157-12.364-14.765A63.239 63.239 0 0031.66 0s-.678 3.168 0 5.515a20.39 20.39 0 00-3.925.756c-1.607.48-2.456.744-3.287 1.55-.501.482-1.306 1.267-1.468 2.419-.095.71.07 1.414-.393 2.306-.073.14-.187.356-.4.59-.561.636-1.175.7-1.86 1.035 0 0-.92.452-1.545 1.27-1.267 1.655.298 5.469 2.495 7.66.77.768 2.258 2.251 3.935 2.172.336-.016.922-.108 1.795-.006.573.069 1.31.155 1.88.495.05.03.1.062.149.097 1.27.887 1.879 3.16 1.04 4.783-.6 1.16-1.745 1.614-2.379 1.865a4.991 4.991 0 01-1.673.355c-.717.038-1.553-.024-2.765-.076-1.426-.064-2.853-.02-4.28-.08-3.469-.149-8.226 1.753-11.625 4.525C.726 42.642.11 50.696.037 51.918c-.475 7.875 3.618 15.601 10.01 19.386">
+                </path>
+            </svg>
+        </a>
+        <div class="container-fluid">
+            <div class="main">
+                <div class="row top">
+                    <h1>Discover</h1>
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide" style="background: rgb(255, 166, 1);">
+                                <h5>A Rare Marriage: How to Grill Our Love</h5>
+                                <img src="img/A Rare Marriage.jpg">
+                            </div>
+                            <div class="swiper-slide" style="background: rgb(85, 159, 233);">
+                                <h5>Dancing in the Evening Lull With My Ribbon</h5>
+                                <img src="img/Dancing in the Evening Lull With My Ribbon.jpg">
+                            </div>
+                            <div class="swiper-slide" style="background: rgb(137, 255, 137);">
+                                <h5>A Couple of Cuckoos</h5>
+                                <img src="img/A Couple of Cuckoos.jpg">
+                            </div>
+                            <div class="swiper-slide" style="background: rgb(61, 61, 61);">
+                                <h5 style="color: #FFF">I'm in Love with the Older Girl Next Door</h5>
+                                <img src="img/I'm in Love with the Older Girl Next Door.jpg">
+                            </div>
+                            <div class="swiper-slide" style="background: #FFF">
+                                <h5>D-Frag!</h5>
+                                <img src="img/D-Frag!.jpg">
+                            </div>
+                            <div class="swiper-slide" style="background: yellow;">
+                                <h5>I Love you, as a Friend.</h5>
+                                <img src="img/I Love You, as a Friend.jpg">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+
+                    <div class="select-box">
+
+                        <div class="options-container" id="option-content1">
+
+                            <div class="option" onclick="a_zsort(0)">
+                                <input type="radio" class="radio" id="TitleAscending" name="sort">
+                                <label for="TitleAscending"> Title Ascending</label>
+                            </div>
+
+                            <div class="option" onclick="a_zsort(1)">
+                                <input type="radio" class="radio" id="TitleDescending" name="sort">
+                                <label for="TitleDescending"> Title Descending</label>
+                            </div>
+
+                        </div>
+                        <div class="selected" id="sort">
+                            Sort
+                        </div>
+                    </div>
+
+                    <div class="select-box">
+                        <div class="options-container" id="option-content2">
+                            <div class="option" onclick="genresort('Action')">
+                                <input type="radio" class="radio" id="Action" name="genre">
+                                <label for="Action">Action</label>
+                            </div>
+
+                            <div class="option" onclick="genresort('Comedy')">
+                                <input type="radio" class="radio" id="Comedy" name="genre">
+                                <label for="Comedy">Comedy</label>
+                            </div>
+
+                            <div class="option" onclick="genresort('Cooking')">
+                                <input type="radio" class="radio" id="Cooking" name="genre">
+                                <label for="Cooking">Cooking</label>
+                            </div>
+
+                            <div class="option" onclick="genresort('Drama')">
+                                <input type="radio" class="radio" id="Drama" name="genre">
+                                <label for="Drama">Drama</label>
+                            </div>
+
+                            <div class="option" onclick="genresort('Ecchi')">
+                                <input type="radio" class="radio" id="Ecchi" name="genre">
+                                <label for="Ecchi">Ecchi</label>
+                            </div>
+
+                            <div class="option" onclick="genresort('Harem')">
+                                <input type="radio" class="radio" id="Harem" name="genre">
+                                <label for="Harem">Harem</label>
+                            </div>
+
+                            <div class="option" onclick="genresort('Office Workers')">
+                                <input type="radio" class="radio" id="Office Workers" name="genre">
+                                <label for="Office Workers">Office Workers</label>
+                            </div>
+
+                            <div class="option" onclick="genresort('Romance')">
+                                <input type="radio" class="radio" id="Romance" name="genre">
+                                <label for="Romance"> Romance</label>
+                            </div>
+
+                            <div class="option" onclick="genresort('Seinen')">
+                                <input type="radio" class="radio" id="Seinen" name="genre">
+                                <label for="Seinen"> Seinen</label>
+                            </div>
+
+                            <div class="option" onclick="genresort('Slice of Life')">
+                                <input type="radio" class="radio" id="Slice of Life" name="genre">
+                                <label for="Slice of Life"> Slice of Life</label>
+                            </div>
+
+                            <div class="option" onclick="genresort('Shonen')">
+                                <input type="radio" class="radio" id="Shonen" name="genre">
+                                <label for="Shonen"> Shonen</label>
+                            </div>
+
+                            <div class="option" onclick="genresort('Sport')">
+                                <input type="radio" class="radio" id="Sport" name="genre">
+                                <label for="Sport"> Sport</label>
+                            </div>
+
+                            <div class="option" onclick="genresort('Treasure Hunting')">
+                                <input type="radio" class="radio" id="Treasure Hunting" name="genre">
+                                <label for="Treasure Hunting"> Treasure Hunting</label>
+                            </div>
+
+                        </div>
+
+                        <div class="selected" id="genre">
+                            Genre
+                        </div>
+                        <div class="search-box">
+                            <input type="text" placeholder="Search..." id="myInput"
+                                onkeyup="filterFunction('option-content2')">
+                        </div>
+                    </div>
+
+                    <div class="select-box">
+                        <div class="options-container" id="option-content3">
+                            <div class="option" onclick="groupsort('Black Cat Scanlations')">
+                                <input type="radio" class="radio" id="BlackCatScanlations" name="group">
+                                <label for="BlackCatScanlations"> Black Cat Scanlations</label>
+                            </div>
+
+                            <div class="option" onclick="groupsort('White Cat Scanlations')">
+                                <input type="radio" class="radio" id="WhiteCatScanlations" name="group">
+                                <label for="WhiteCatScanlations"> White Cat Scanlations</label>
+                            </div>
+
+                            <div class="option" onclick="groupsort('Cuckoo Scans')">
+                                <input type="radio" class="radio" id="CuckooScans" name="group">
+                                <label for="Cuckoo Scans"> Cuckoo Scans</label>
+                            </div>
+
+                            <div class="option" onclick="groupsort('nocturne scans')">
+                                <input type="radio" class="radio" id="nocturne scans" name="group">
+                                <label for="nocturne scans"> nocturne scans</label>
+                            </div>
+
+                            <div class="option" onclick="groupsort('Project Vinland')">
+                                <input type="radio" class="radio" id="Project Vinland" name="group">
+                                <label for="Project Vinland"> Project Vinland</label>
+                            </div>
+
+                            <div class="option" onclick="groupsort('RomCat Scanlations')">
+                                <input type="radio" class="radio" id="RomCat Scanlations" name="group">
+                                <label for="RomCat Scanlations"> RomCat Scanlations</label>
+                            </div>
+
+                            <div class="option" onclick="groupsort('STALKER Scalations')">
+                                <input type="radio" class="radio" id="STALKER Scanlation" name="group">
+                                <label for="STALKER Scanlation"> STALKER Scanlation</label>
+                            </div>
+
+                        </div>
+                        <div class="selected" id="group">
+                            Group
+                        </div>
+                        <div class="search-box">
+                            <input type="text" placeholder="Search..." id="myInput"
+                                onkeyup="filterFunction('option-content3')">
+                        </div>
+                    </div>
+
+                    <div class="select-box">
+                        <div class="options-container" id="option-content4">
+                            <div class="option" onclick="authorsort('Miki Yoshikawa')">
+                                <input type="radio" class="radio" id="Miki Yoshikawa" name="author">
+                                <label for="Miki Yoshikawa">Miki Yoshikawa</label>
+                            </div>
+
+                            <div class="option" onclick="authorsort('Shiori Hanatsuka')">
+                                <input type="radio" class="radio" id="Shiori Hanatsuka" name="author">
+                                <label for="Shiori Hanatsuka">Shiori Hanatsuka</label>
+                            </div>
+
+                            <div class="option" onclick="authorsort('Tomoya Haruno')">
+                                <input type="radio" class="radio" id="Tomoya Haruno" name="author">
+                                <label for="Tomoya Haruno">Tomoya Haruno</label>
+                            </div>
+
+                            <div class="option" onclick="authorsort('Yumi Kurokawa')">
+                                <input type="radio" class="radio" id="Yumi Kurokawa" name="author">
+                                <label for="Yumi Kurokawa">Yumi Kurokawa</label>
+                            </div>
+
+                            <div class="option" onclick="authorsort('Yasuo Ootagaki')">
+                                <input type="radio" class="radio" id="Yasuo Ootagaki" name="author">
+                                <label for="Yasuo Ootagaki">Yasuo Ootagaki</label>
+                            </div>
+
+                            <div class="option" onclick="authorsort('Takeshi Azuma')">
+                                <input type="radio" class="radio" id="Takeshi Azuma" name="author">
+                                <label for="Takeshi Azuma">Takeshi Azuma</label>
+                            </div>
+
+                            <div class="option" onclick="authorsort('Zurachy Rurihara')">
+                                <input type="radio" class="radio" id="Zurachy Rurihara" name="author">
+                                <label for="Zurachy Rurihara">Zurachy Rurihara</label>
+                            </div>
+
+                            <div class="option" onclick="authorsort('Hitoshi Iwaaki')">
+                                <input type="radio" class="radio" id="Hitoshi Iwaaki" name="author">
+                                <label for="Hitoshi Iwaaki">Hitoshi Iwaaki</label>
+                            </div>
+
+                            <div class="option" onclick="authorsort('Kiseki Himura')">
+                                <input type="radio" class="radio" id="Kiseki Himura" name="author">
+                                <label for="Kiseki Himura">Kiseki Himura</label>
+                            </div>
+
+                            <div class="option" onclick="authorsort('Mikumi Yuchi')">
+                                <input type="radio" class="radio" id="Mikumi Yuchi" name="author">
+                                <label for="Mikumi Yuchi">Mikumi Yuchi</label>
+                            </div>
+
+                            <div class="option" onclick="authorsort('Koume Fujichika')">
+                                <input type="radio" class="radio" id="Koume Fujichika" name="author">
+                                <label for="Koume Fujichika">Koume Fujichika</label>
+                            </div>
+
+                            <div class="option" onclick="authorsort('Manta Shiro')">
+                                <input type="radio" class="radio" id="Manta Shiro" name="author">
+                                <label for="Manta Shiro">Manta Shiro</label>
+                            </div>
+
+
+                        </div>
+
+                        <div class="selected" id="author">
+                            Author
+                        </div>
+                        <div class="search-box">
+                            <input type="text" placeholder="Search..." id="myInput"
+                                onkeyup="filterFunction('option-content4')">
+                        </div>
+                    </div>
+
+                    <div class="select-box">
+                        <div class="options-container" id="option-content5">
+                            <div class="option" onclick="statussort('Ongoing')">
+                                <input type="radio" class="radio" id="Ongoing" name="status">
+                                <label for="Ongoing">Ongoing</label>
+                            </div>
+
+                            <div class="option" onclick="statussort('Dropped')">
+                                <input type="radio" class="radio" id="Dropped" name="status">
+                                <label for="Dropped">Dropped</label>
+                            </div>
+
+                        </div>
+
+                        <div class="selected" id="status">
+                            Status
+                        </div>
+                        <div class="search-box">
+                            <input type="text" placeholder="Search..." id="myInput"
+                                onkeyup="filterFunction('option-content5')">
+                        </div>
+                    </div>
+                </div>
+                <div class="row mangalist" id="mangalist">
+                </div>
+            </div>
+            <div class="row rowbottom" id="credit">
+                <div class="copyright">
+                    copyright © 2021
+                </div>
+                <div class="link">
+                    <a id="link" href="#">About</a>
+                    <a id="link" href="#">Discord</a>
+                </div>
+            </div>
+        </div>
+        <!-- Swiper JS -->
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+        <!-- Initialize Swiper -->
+        <script>
+            var swiper = new Swiper(".mySwiper", {
+                slidesPerView: 3.5,
+                spaceBetween: 30,
+                grabCursor: true,
+                pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true
+                }
+            });
+
+            // Code For Button
+
+            const sort = document.getElementById("sort");
+            const genre = document.getElementById("genre");
+            const group = document.getElementById("group");
+            const author = document.getElementById("author");
+            const status = document.getElementById("status");
+
+            const optionsContainerSort = document.getElementById("option-content1");
+            const optionsContainerGenre = document.getElementById("option-content2");
+            const optionsContainerGroup = document.getElementById("option-content3");
+            const optionsContainerAuthor = document.getElementById("option-content4");
+            const optionsContainerStatus = document.getElementById("option-content5");
+
+
+
+            const optionsList = document.querySelectorAll(".option");
+
+            sort.addEventListener("click", () => {
+                optionsContainerSort.classList.toggle("active");
+            });
+
+            genre.addEventListener("click", () => {
+                optionsContainerGenre.classList.toggle("active");
+            });
+
+            group.addEventListener("click", () => {
+                optionsContainerGroup.classList.toggle("active");
+            });
+
+            author.addEventListener("click", () => {
+                optionsContainerAuthor.classList.toggle("active");
+            });
+
+            status.addEventListener("click", () => {
+                optionsContainerStatus.classList.toggle("active");
+            });
+        // End Code For Button
+
+        // Script for Dark Mode
+
+        function darkmode() {
+            //to do :homeicon,checkitout
+            var element = document.body;
+            element.classList.toggle("dark-mode");
+            var dm = document.getElementById("screenmode").className;
+            if (dm == "bi bi-moon circle-iconl iconl") {
+                document.getElementById("screenmode").className = "bi bi-lightbulb circle-icond icond";
+                document.getElementById("search").className = "bi bi-search circle-icond icond";
+                document.getElementById("nav").className = "dark";
+                document.getElementById("nav1").className = "dark";
+                document.getElementById("nav2").className = "dark";
+                document.getElementById("nav3").className = "dark";
+                document.getElementById("homei").style.fill = "white";
+                document.getElementById("credit").style.background = "white";
+                document.getElementById("credit").style.color = "black";
+                document.getElementById("chap").className = "chapterd";
+                document.getElementById("chap1").className = "chapterd";
+                document.getElementById("chap2").className = "chapterd";
+                document.getElementById("chap3").className = "chapterd";
+                document.getElementById("chap4").className = "chapterd";
+            }
+            else {
+                document.getElementById("screenmode").className = "bi bi-moon circle-iconl iconl";
+                document.getElementById("search").className = "bi bi-search circle-iconl iconl";
+                document.getElementById("nav").className = "light";
+                document.getElementById("nav1").className = "light";
+                document.getElementById("nav2").className = "light";
+                document.getElementById("nav3").className = "light";
+                document.getElementById("homei").style.fill = "black";
+                document.getElementById("credit").style.background = "black";
+                document.getElementById("credit").style.color = "white";
+                document.getElementById("chap").className = "chapterl";
+                document.getElementById("chap1").className = "chapterl";
+                document.getElementById("chap2").className = "chapterl";
+                document.getElementById("chap3").className = "chapterl";
+                document.getElementById("chap4").className = "chapterl";
+            }
+        }
+        </script>
+        <script src="sort.js"></script>
+        <script src="search.js"></script>
+    </body>
+
+</html>

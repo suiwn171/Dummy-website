@@ -1,0 +1,926 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>Test</title>
+
+    <style>
+        body
+        {
+            font-family: 'Roboto', sans-serif;
+            padding: 25px;
+            background-color: white;
+            color: black;
+            font-size: 25px;
+            transition: 0.8s;
+        }
+        .homeicond
+        {
+            fill: white;
+        }
+        .homeicon
+        {
+            fill: black;
+        }
+        .iconl 
+        {
+            color: #000;
+        }
+        .iconl:hover 
+        {
+            color: #fff
+        }   
+
+        .icond 
+        {
+            color: #fff;
+        }
+        .icond:hover 
+        {
+            color: hsl(0, 0%, 10%);
+        }   
+        .circle-iconl
+        {
+            margin-left: 60%;
+            padding: 0.2%;
+            border-radius: 50%;
+            
+        }
+        .circle-iconl:hover
+        {
+            background: hsl(0, 0%, 10%);
+            padding: 0.8%;
+            border-radius: 50%;
+            
+        }
+        .circle-icond:hover
+        {
+            background: #fff;
+            padding: 0.8%;
+            border-radius: 50%;
+            
+        }
+        .circle-icond
+        {
+            margin-left: 60%;
+            padding: 0.2%;
+            border-radius: 50%;    
+        }
+        .dark-mode 
+        {
+            background-color: hsl(0, 0%, 10%);
+            color: white;
+        }
+        .arrows
+        {
+            display: inline-block;
+            width: 100%;
+        }
+        .iconl 
+        {
+            color: #000;
+        }
+        .iconl:hover 
+        {
+            color: #fff
+        }   
+        body 
+        {
+            padding: 25px;
+            background-color: white;
+            color: black;
+            font-size: 25px;
+        }
+        .icond 
+        {
+            color: #fff;
+        }
+        .icond:hover 
+        {
+            color: #000;
+        }   
+        body 
+        {
+            padding: 25px;
+            background-color: white;
+            color: black;
+            font-size: 25px;
+        }
+        .circle-iconl
+        {
+            padding: 1%;
+            border-radius: 50%;   
+        }
+        .circle-iconl:hover
+        {
+            background: #000;
+            padding: 1%;
+            border-radius: 50%;     
+        }
+        .circle-icond:hover
+        {
+            background: #fff;
+            padding: 1%;
+            border-radius: 50%;     
+        }
+        .circle-icond
+        {
+            padding: 1%;
+            border-radius: 50%;   
+        }
+        .dark-mode 
+        {
+            background-color: black;
+            color: white;
+        }
+        ul
+        {
+            height: 300px;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+        .light :hover
+        {
+            color: black;
+        }
+        .dark a
+        {
+            color: white;
+        }
+        li
+        {
+            float: left;
+        }
+        li a 
+        {
+            display: block;
+            color: black;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        #top
+        {
+            width: 100%;
+            height: 600px;
+            background-color: transparent;
+        }
+        #top img
+        {
+            position: absolute;
+            width: auto;
+            max-height: 70%;
+            right: 0;
+            z-index: -1;
+        }
+        #topbox
+        {
+            width: 45%;
+            height: 400px;
+            padding-top: 50px;
+            margin-left: 20%;
+        }
+        .tag
+        {
+            padding: 5px;
+            background-color: grey;
+            border-radius: 5px;
+            font-size: 15px;
+            display: inline-block;
+        }
+        #check
+        {
+            padding: 7px;
+            background-color: grey;
+            border-radius: 5px;
+            font-size: 18px;
+            margin-top: 15px;
+            display: inline-block;
+        }
+        #texttopbox,#tagbox
+        {
+            margin-top: -20px;
+        }
+        #text
+        {
+            width: 95%;
+            display: -webkit-box;
+            -webkit-box-orient:vertical;
+            -webkit-line-clamp: 3;
+            overflow: hidden;
+        }
+        #middle
+        {
+            width: 100%;
+            height: 1100px;
+        }
+        #middlebox
+        {
+            padding-top: 0px;
+            height: 100%;
+        }
+        #updates
+        {
+            width: 80%;
+            height: 60%;
+            margin-left: 20%;
+            padding-top: 25px;
+            background-color: transparent;
+        }
+        #updateboxes
+        {
+            width: 15%;
+            height: 50%;
+            margin-top: 20px;
+            margin-left: 10px;
+            display: inline-block;
+            background-color: transparent;
+        }
+        #updateboxes:hover .hide
+        {
+            display: block;
+        }
+        .hide
+        {
+            width: 200px;
+            transition-duration: 0.5s;
+            margin: 0 auto;
+            display: none;
+        }
+        .margin-auto 
+        {
+            margin: 0 auto;
+            position: relative;
+            top: 70%;
+        }
+        #popular
+        {
+            width: 80%;
+            height: 40%;
+            margin-left: 20%;
+            background-color: transparent;
+        }
+        #popularleft,#popularright
+        {   
+            width: 49%;
+            height: 70%;
+            margin-left: 7px;
+            display: inline-block;
+        }
+        #popularrank
+        {
+            position: relative;
+            width: 100%;
+            height: 30%;
+            margin-top: 7px;
+            background-color: transparent;
+            border-radius: 15px;
+        }
+        #popularrank img
+        {
+            border-radius: 15px; 
+            opacity:0;
+        }
+        #popularrank img:hover
+        {
+            opacity:0.5;
+            cursor: pointer;
+            transition-duration: 0.5s;
+        }
+        #textonimagepopular
+        {
+            position: absolute;
+            top: 30%;
+            left: 5%;
+        }
+        #bottom
+        {
+            width: 100%;
+            height: 500px;
+            background-color: transparent;
+        }
+        #bottombox
+        {
+            width: 80%;
+            height: 500px;
+            margin-left: 20%;
+            background-color: transparent;
+        }
+        #series
+        {
+            width: 19%;
+            height: 65%;
+            margin-left: 5px;
+            background-color: transparent;
+            display: inline-block;
+        }
+        #updateboxes .i1:hover img
+        {
+            filter: blur(8px);
+            transition: filter 0.5s;
+        }
+        #updateboxes .i1
+        {
+            width: 100%;
+            height: 100%;
+            position: relative;
+            display: inline-block;
+        }
+        #updateboxes .i1 span
+        {
+            display: none;
+            position: absolute;
+            top: 60%;
+            left: 8%;
+        }
+        #updateboxes .i1:hover span
+        {
+            display: block;
+            transition: 0.5s;
+        }
+        #series span input[type="button"]
+        {
+            width: 150px;
+            height: 40px;
+            background:#fff;
+        }
+        #series .i1:hover img
+        {
+            filter: blur(8px);
+            transition: filter 0.5s;
+        }
+        #series .i1
+        {
+            width: 100%;
+            height: 100%;
+            position: relative;
+            display: inline-block;
+        }
+        #series .i1 span
+        {
+            display: none;
+            position: absolute;
+            top: 70%;
+            left: 16%;
+        }
+        #series .i1:hover span
+        {
+            display: block;
+            transition: 0.5s;
+        }
+        #series span input[type="button"]
+        {
+            width: 150px;
+            height: 40px;
+            background:#fff;
+        }
+        img
+        {
+            width: 100%;
+            height: 100%;
+            overflow-x: hidden;
+        }
+        @media screen and (max-width: 1360px)
+        {
+            #topbox
+            {
+                margin-left: 15%;
+            }
+            #middle
+            {
+                height: 1400px;
+            }
+            #updates
+            {
+                width: 85%;
+                height: 70%;
+                margin-left: 15%;
+            }
+            #updateboxes
+            {
+                width: 25%;
+                height: 32%;
+                margin-left: 50px;
+                margin-top: 75px;
+                display: inline-block;
+            }
+            #updateboxes .i1 span
+            {
+                display: none;
+                position: absolute;
+                top: 70%;
+                left: 18%;
+            }
+            #bottombox
+            {
+                margin-left: 15%;
+                width: 85%;
+            }
+            #popular
+            {
+                width: 85%;
+                height: 30%;
+                margin-left: 15%;
+            }
+            #popularleft,#popularright
+            {   
+                width: 48%;
+                height: 65%;
+                margin-left: 9px;
+                display: inline-block;
+            }
+            #bottom
+            {
+                height: 700px;
+            }
+            #bottombox
+            {
+                height: 700px;
+            }
+            #series
+            {
+                width: 23.5%;
+                height: 40%;
+                margin-left: 4px;
+                margin-top: 15px;
+                display: inline-block;
+            }
+
+        }
+        @media screen and (max-width: 900px)
+        {
+            #topbox
+            {
+                width: 60%;
+                margin-left: 5%;
+            }
+            #text,#tagbox
+            {
+                display: none;
+            }
+            #middle
+            {
+                height: 2100px;
+            }
+            #updates
+            {
+                width: 95%;
+                height: 65%;
+                margin-left: 5%;
+            }
+            #updateboxes
+            {
+                width: 35%;
+                height: 30%;
+                margin-left: 10%;
+                margin-top: 10px;
+                display: inline-block;
+            }
+            #bottombox
+            {
+                width: 95%;
+                margin-left: 5%;
+            }
+            #popular
+            {
+                width: 95%;
+                height: 35%;
+                margin-left: 5%;
+            }
+            #popularleft
+            {   
+                width: 85%;
+                height: 40%;
+                margin-left: 7%;
+                display: inline-block;
+            }
+            #popularright
+            {
+                width: 85%;
+                height: 40%;
+                margin-left: 7%;
+                margin-top: -5px;
+                display: inline-block;
+            }
+            #bottom
+            {
+                height: 700px;
+            }
+            #bottombox
+            {
+                height: 700px;
+            }
+            #series
+            {
+                width: 31%;
+                height: 40%;
+                margin-left: 5px;
+                margin-top: 7px;
+                display: inline-block;
+            }
+            #series .i1 span
+            {
+                left: 18%;
+            }
+        }
+        @media screen and (max-width: 600px)
+        {
+            #topbox
+            {
+                width: 70%;
+            }
+            #middle
+            {
+                height: 3200px;
+            }
+            #updates
+            {
+                height: 75%;
+            }
+            #updateboxes
+            {
+                width: 65%;
+                height: 15%;
+                margin-top: 2%;
+                margin-left: 17.5%;
+                display: inline-block;
+            }
+            #updateboxes .i1 span
+            {
+                display: none;
+                position: absolute;
+                top: 70%;
+                left: 23%;
+            }
+            #popular
+            {
+                margin-top: -5%;
+                height: 25%;
+            }
+            #popularleft
+            {   
+                width: 95%;
+                height: 43%;
+                margin-left: 9px;
+                display: inline-block;
+            }
+            #popularright
+            {
+                width: 95%;
+                height: 43%;
+                margin-left: 9px;
+                margin-top: -7px;
+                display: inline-block;
+            }
+            #series
+            {
+                width: 48%;
+                height: 60%;
+                margin-left: 5px;
+                margin-top: 7px;
+                display: inline-block;
+            }
+            #bottom
+            {
+                height: 1000px;
+            }
+            #bottombox
+            {
+                height: 1000px;
+            }
+            #series
+            {
+                height: 37%;
+                width: 65%;
+                margin-left: 17.5%;
+            }
+            #series .i1 span
+            {
+                left: 21%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <ul><br>
+        <li class="light" id="nav"><a href="#home">Home</a></li>
+        <li class="light" id="nav1"><a href="#news">Discover</a></li>
+        <li class="light" id="nav2"><a href="#contact">About</a></li>
+        <li class="light" id="nav3"><a href="#about">Discord</a></li>
+        <i id="search" class="bi bi-search circle-iconl iconl" style="cursor:pointer;" animation="throb"></i>
+        <i id="screenmode" class="bi bi-moon circle-iconl iconl" onclick="darkmode()"style="cursor:pointer;margin-left:2%;" animation="throb"></i>
+        <br><br>
+        <a href="home (1).html" style="cursor:pointer">
+            <svg>
+            <path id="homeicon"class="homeicon" d="M57.192 36.691c-1.344.232-2.616.55-3.785.906-.658.2-3.258.995-6.567 2.69 0 0-.95.486-1.872 1.017-6.905 3.975-12.915 11.81-19.835 11.958-4.732.101-7.836-2.119-7.836-2.119a10.56 10.56 0 01-1.994-1.852c.148.11 2.58 1.846 5.304 2.485 4.009.94 9.695-2.557 11.425-3.643 2.08-1.305 1.59-1.312 5.774-4.195a123.864 123.864 0 015.546-3.596c.782-.479 1.446-.863 1.626-.966 1.398-.804 4.684-2.243 12.214-2.685zm-25.787-25.78s-1.76 1.825-3.386 2.152c-1.538.309-3.808-.628-3.808-.628s1.446-1.959 3.041-2.357c1.81-.45 4.153.832 4.153.832zm-8.189 8.294c.183-1.603 1.306-2.928 2.802-3.331 2.467-.66 4.267 1.638 4.236 1.692-.03.054-1.934-1.724-3.941-1.302-1.499.315-2.486 1.737-3.097 2.941zm.079.495c.545-1.52 1.938-2.556 3.484-2.607 2.55-.085 3.786 2.563 3.744 2.607-.041.045-1.496-2.115-3.544-2.159-1.531-.035-2.815 1.128-3.684 2.159zm0 .445c.986-1.277 2.631-1.832 4.118-1.401 2.45.708 2.808 3.608 2.755 3.64-.064 0-.777-2.48-2.704-3.154-1.446-.505-3.024.204-4.17.915zM10.047 71.304c5.176 3.064 10.547 2.765 13.451 2.604 2.8-.156 5.057-.674 10.272-2.54.511-.186 1.053-.382 1.626-.593l.167-.062a285.915 285.915 0 004.271-1.613c2.057-.797 3.86-1.524 5.46-2.18 1.015-.416 1.95-.803 2.817-1.16 4.013-1.661 6.589-2.705 9.094-3.112 1.29-.207 2.558-.248 3.994-.117.824.072 1.797.212 2.904.481.108.026.22.055.33.083.466.124.957.268 1.467.442 1.63.552 3.463 1.384 5.444 2.645 1.389-.74 3.776-2.255 5.706-5.03.53-.761 4.236-6.265 2.482-12.807-.61-2.282-1.733-4.13-3.02-5.6-1.174-1.344-2.483-2.377-3.652-3.145 0-.003-.004-.003-.004-.003a20.758 20.758 0 00-3.242-1.73c-2.056-.892-4.157-1.353-6.209-1.509a61.278 61.278 0 00-.83-2.566 56.212 56.212 0 00-4.442-9.66c-.89-1.536-4.837-8.157-12.364-14.765A63.239 63.239 0 0031.66 0s-.678 3.168 0 5.515a20.39 20.39 0 00-3.925.756c-1.607.48-2.456.744-3.287 1.55-.501.482-1.306 1.267-1.468 2.419-.095.71.07 1.414-.393 2.306-.073.14-.187.356-.4.59-.561.636-1.175.7-1.86 1.035 0 0-.92.452-1.545 1.27-1.267 1.655.298 5.469 2.495 7.66.77.768 2.258 2.251 3.935 2.172.336-.016.922-.108 1.795-.006.573.069 1.31.155 1.88.495.05.03.1.062.149.097 1.27.887 1.879 3.16 1.04 4.783-.6 1.16-1.745 1.614-2.379 1.865a4.991 4.991 0 01-1.673.355c-.717.038-1.553-.024-2.765-.076-1.426-.064-2.853-.02-4.28-.08-3.469-.149-8.226 1.753-11.625 4.525C.726 42.642.11 50.696.037 51.918c-.475 7.875 3.618 15.601 10.01 19.386"></path>
+            </svg>
+        </a>
+    </ul>
+    <div id="top">
+        <img id="hpic" src = "top_img/ishaved.png">
+        <br>
+        <div id="topbox">
+            <div id="texttopbox">
+                <p style = "font-size: 32px; color: hsl(0, 0%, 50%)">Recommended</p>
+                <p id="hname" style = "font-size: 48px; color: grey">I Shaved. Then I Brought a High School Girl Home.</p>
+            </div>
+            <div id="tagbox">
+                <div class="tag">Comedy</div>
+                <div class="tag" id="dr">Drama</div>
+                <div class="tag" >Ecchi</div>
+                <div class="tag">Romance</div>
+                <div class="tag">Shounen</div>
+            </div>
+            <br>
+            <div id="text">
+                <p id="hstory" style = "font-size: 16px; color: hsl(0, 0%, 25%)">Yoshida was swiftly rejected by his crush of 5 years. On his way home after drinking his sorrows away, he saw a high school girl sitting on the street."I'll let you do it with me, so let me stay." "Don't even joke about something like that."And so, the story of living with the high school girl Sayu began. The slice-of-life romantic comedy between a runaway high school girl and a 26 year old salaryman ensues.</p>
+            </div>
+            <div id="check">Check it out</div>
+        </div>
+        <div class = "arrows">
+            <i id="lefti" class="bi bi-arrow-left circle-iconl iconl" onclick="left()" style="cursor:pointer;" animation="throb"></i>
+            <i id="righti" class="bi bi-arrow-right circle-iconl iconl" onclick="right()" style="cursor:pointer;margin-left:1%;" animation="throb"></i>
+        </div>
+    </div>
+    <div id="middle">
+        <div id="middlebox">
+            <div id="updates">
+                <p style = "font-size: 40px; color: hsl(0, 0%, 50%)">Latest Updates</p>
+                <div id="updateboxes">
+                    <p class="i1">
+                    <img src="img/D-Frag!.jpg">
+                    <span><input type="button" value="Check it out"></span>
+                    <p style="font-size:20px; 
+                    display: -webkit-box;
+                    -webkit-box-orient:vertical;
+                    -webkit-line-clamp: 1;
+                    overflow: hidden;">D-Frag!</p>
+                    <p style="font-size:16px;">Chapter 5</p>
+                    </p>
+                </div>
+                <div id="updateboxes">
+                    <p class="i1">
+                    <img src="img/Deep.jpg">
+                    <span><input type="button" value="Check it out"></span>
+                    <p style="font-size:20px; 
+                    display: -webkit-box;
+                    -webkit-box-orient:vertical;
+                    -webkit-line-clamp: 1;
+                    overflow: hidden;">Deep</p>
+                    <p style="font-size:16px;">Chapter 5</p>
+                    </p>
+                </div>
+                <div id="updateboxes">
+                    <p class="i1">
+                    <img src="img/A Rare Marriage.jpg">
+                    <span><input type="button" value="Check it out"></span>
+                    <p style="font-size:20px; 
+                    display: -webkit-box;
+                    -webkit-box-orient:vertical;
+                    -webkit-line-clamp: 1;
+                    overflow: hidden;">A Rare Marriage</p>
+                    <p style="font-size:16px;">Chapter 5</p>
+                    </p>
+                
+                </div>
+                <div id="updateboxes">
+                    <p class="i1">
+                    <img src="img/Senpai ga Uzai Kouhai no Hanashi.jpg">
+                    <span><input type="button" value="Check it out"></span>
+                    <p style="font-size:20px; 
+                    display: -webkit-box;
+                    -webkit-box-orient:vertical;
+                    -webkit-line-clamp: 1;
+                    overflow: hidden;">Senpai ga Uzai Kouhai no Hanashi</p>
+                    <p style="font-size:16px;">Chapter 5</p>
+                    </p>
+                </div>
+                <div id="updateboxes">
+                    <p class="i1">
+                    <img src="img/I Love You, as a Friend.jpg">
+                    <span><input type="button" value="Check it out"></span>
+                    <p style="font-size:20px; 
+                    display: -webkit-box;
+                    -webkit-box-orient:vertical;
+                    -webkit-line-clamp: 1;
+                    overflow: hidden;">I Love You, as a Friend</p>
+                    <p style="font-size:16px;">Chapter 5</p>
+                    </p>
+                </div>
+                <div id="updateboxes">
+                    <p class="i1">
+                    <img src="img/Fechippuru.jpg">
+                    <span><input type="button" value="Check it out"></span>
+                    <p style="font-size:20px; 
+                    display: -webkit-box;
+                    -webkit-box-orient:vertical;
+                    -webkit-line-clamp: 1;
+                    overflow: hidden;">Fechippuru</p>
+                    <p style="font-size:16px;">Chapter 5</p>
+                    </p>
+                </div>
+            </div>
+            <div id="popular">
+                <p style="font-size: 40px; color: hsl(0, 0%, 50%)">Most Popular</p>
+                <div id="popularleft">
+                    <div id="popularrank" style="background-color:gold">
+                        <img src="img/A Couple of Cuckoos_cropped.png">
+                        <div id ="textonimagepopular">1. A Couple of Cuckoos</div>
+                    </div>
+                    <div id="popularrank" style="background-color:silver">
+                        <img src="img/Fechippuru_cropped.png">
+                        <div id ="textonimagepopular">2. Fechippuru</div>
+                    </div>
+                    <div id="popularrank" style="background-color:hsl(30, 100%, 30%)">
+                        <img src="img/Senpai ga Uzai Kouhai no Hanashi_cropped.png">
+                        <div id ="textonimagepopular">3. Senpai ga Uzai Kouhai no Hanashi</div>
+                    </div>
+                </div>
+                <div id="popularright">
+                    <div id="popularrank" style="background-color:grey">
+                        <img src="img/I Love You, as a Friend_cropped.png">
+                        <div id ="textonimagepopular">4. Senpai ga Uzai Kouhai no Hanashi</div>
+                    </div>
+                    <div id="popularrank" style="background-color:grey">
+                        <img src="img/A Rare Marriage_cropped.png">
+                        <div id ="textonimagepopular">5. A Rare Marriage</div>
+                    </div>
+                    <div id="popularrank" style="background-color:grey">
+                        <img src="img/D-Frag!_cropped.png">
+                        <div id ="textonimagepopular">6. D-Frag!</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="bottom">
+        <div id="bottombox">
+            <p style="font-size: 40px; color: hsl(0, 0%, 50%)">New Series</p>
+            <div id="series">
+                <p class="i1">
+                    <img src="img/Fechippuru.jpg">
+                    <span><input type="button" value="More Info"></span>
+                    <p style="font-size:20px; 
+                    display: -webkit-box;
+                    -webkit-box-orient:vertical;
+                    -webkit-line-clamp: 1;
+                    overflow: hidden;">Fechippuru!</p>
+                    <p style="font-size:16px; 
+                    display: -webkit-box;
+                    -webkit-box-orient:vertical;
+                    -webkit-line-clamp: 1;
+                    overflow: hidden;">Comedy, Romance, Shounen, Slice of life</p>
+                    </p>
+                </p>
+            </div>
+            <div id="series">
+                <p class="i1">
+                    <img src="img/Senpai ga Uzai Kouhai no Hanashi.jpg">
+                    <span><input type="button" value="More Info"></span>
+                    <p style="font-size:20px; 
+                    display: -webkit-box;
+                    -webkit-box-orient:vertical;
+                    -webkit-line-clamp: 1;
+                    overflow: hidden;">Senpai ga Uzai Kouhai no Hanashi</p>
+                    <p style="font-size:16px; 
+                    display: -webkit-box;
+                    -webkit-box-orient:vertical;
+                    -webkit-line-clamp: 1;
+                    overflow: hidden;">Comedy, Romance</p>
+                    </p>
+                </p>
+            </div>
+            <div id="series">
+                <p class="i1">
+                    <img src="img/D-Frag!.jpg">
+                    <span><input type="button" value="More Info"></span>
+                    <p style="font-size:20px; 
+                    display: -webkit-box;
+                    -webkit-box-orient:vertical;
+                    -webkit-line-clamp: 1;
+                    overflow: hidden;">D-Frag!</p>
+                    <p style="font-size:16px; 
+                    display: -webkit-box;
+                    -webkit-box-orient:vertical;
+                    -webkit-line-clamp: 1;
+                    overflow: hidden;">Comedy, Romance, School, Harem, Seinen, Slice of Life</p>
+                    </p>
+                </p>
+            </div>
+            <div id="series">
+                <p class="i1">
+                    <img src="img/I Love You, as a Friend.jpg">
+                    <span><input type="button" value="More Info"></span>
+                    <p style="font-size:20px; 
+                    display: -webkit-box;
+                    -webkit-box-orient:vertical;
+                    -webkit-line-clamp: 1;
+                    overflow: hidden;">D-Frag!</p>
+                    <p style="font-size:16px; 
+                    display: -webkit-box;
+                    -webkit-box-orient:vertical;
+                    -webkit-line-clamp: 1;
+                    overflow: hidden;">Comedy, Drama, Ecchi, Romance, School life, Seinen, Slice of life</p>
+                </p>
+        </div>
+    </div>
+    <script>
+        var i = 0;
+        function darkmode() {
+            //to do :homeicon,checkitout
+            var element = document.body;
+            element.classList.toggle("dark-mode");
+            var dm = document.getElementById("screenmode").className;
+            if(dm == "bi bi-moon circle-iconl iconl"){
+                document.getElementById("screenmode").className = "bi bi-lightbulb circle-icond icond";
+                document.getElementById("search").className = "bi bi-search circle-icond icond";
+                document.getElementById("nav").className = "dark";
+                document.getElementById("nav1").className = "dark";
+                document.getElementById("nav2").className = "dark";
+                document.getElementById("nav3").className = "dark";
+                document.getElementById("homeicon").style.fill = "white";
+                document.getElementById("lefti").className = "bi bi-arrow-left circle-icond icond";
+                document.getElementById("righti").className = "bi bi-arrow-right circle-icond icond";
+            }
+            else{
+                document.getElementById("screenmode").className = "bi bi-moon circle-iconl iconl";
+                document.getElementById("search").className = "bi bi-search circle-iconl iconl";
+                document.getElementById("nav").className = "light";
+                document.getElementById("nav1").className = "light";
+                document.getElementById("nav2").className = "light";
+                document.getElementById("nav3").className = "light";
+                document.getElementById("homeicon").style.fill = "black";
+                document.getElementById("lefti").className = "bi bi-arrow-left circle-iconl iconl";
+                document.getElementById("righti").className = "bi bi-arrow-right circle-iconl iconl";
+            }
+        }
+        function left(){
+            i = i-1;
+            var name = document.getElementById("hname");
+            var pic = document.getElementById("hpic");
+            var story = document.getElementById("hstory");
+            var dr = document.getElementById("dr");
+            if(i%3 == 0){
+                name.innerHTML="I Shaved. Then I Brought a High School Girl Home.";
+                story.innerHTML="Yoshida was swiftly rejected by his crush of 5 years. On his way home after drinking his sorrows away, he saw a high school girl sitting on the street.\"I\'ll let you do it with me, so let me stay.\" \"Don\'t even joke about something like that.\"And so, the story of living with the high school girl Sayu began. The slice-of-life romantic comedy between a runaway high school girl and a 26 year old salaryman ensues.";
+                pic.src="top_img/ishaved.png";
+                dr.innerHTML="Drama";
+            }
+            else if(i%3 == 1){
+                name.innerHTML="My Charms Are Wasted On Kuroiwa Medaka";
+                story.innerHTML="Kuroiwa Medaka was born in a temple and is currently a monk in training. Because of his temple\'s rules, he can\'t interact with girls - and what\'s more, he doesn\'t even know how to regularly socialize with them. Mona, the \"queen bee\" of the school, however insistently tries to make him fall in love with her, but he always ignores her in order to maintain the rules of his temple.";
+                pic.src="top_img/kuroiwa.png";
+                dr.innerHTML="School life";
+            }
+            else{
+                name.innerHTML="Matchmaking Of The Amagami Household";
+                story.innerHTML="Kamihate Uryuu, orphaned since childhood, receives an invitation to stay at the local Shinto shrine. All he wanted was a quiet place to study so that he can fulfill his dream of making it into a top medical school, but after arriving there, he comes across three beautiful shrine maiden sisters... and the head priest requests that he marry one of them and take over the shrine. A tale of love and miracles is about to unfold!";
+                pic.src="top_img/amagami.png";
+                dr.innerHTML="Harem";
+            }
+        }
+        function right(){
+            i = i+1;
+            var story = document.getElementById("hstory");
+            var name = document.getElementById("hname");
+            var pic = document.getElementById("hpic");
+            var dr = document.getElementById("dra");
+            if(i%3 == 0){
+                name.innerHTML="I Shaved. Then I Brought a High School Girl Home.";
+                story.innerHTML="Yoshida was swiftly rejected by his crush of 5 years. On his way home after drinking his sorrows away, he saw a high school girl sitting on the street.\"I\'ll let you do it with me, so let me stay.\" \"Don\'t even joke about something like that.\"And so, the story of living with the high school girl Sayu began. The slice-of-life romantic comedy between a runaway high school girl and a 26 year old salaryman ensues.";
+                pic.src="top_img/ishaved.png";
+                dr.innerHTML="Drama";
+            }
+            else if(i%3 == 1){
+                name.innerHTML="My Charms Are Wasted On Kuroiwa Medaka";
+                story.innerHTML="Kuroiwa Medaka was born in a temple and is currently a monk in training. Because of his temple\'s rules, he can\'t interact with girls - and what\'s more, he doesn\'t even know how to regularly socialize with them. Mona, the \"queen bee\" of the school, however insistently tries to make him fall in love with her, but he always ignores her in order to maintain the rules of his temple.";
+                pic.src="top_img/kuroiwa.png";
+                dr.innerHTML="School life";
+            }
+            else{
+                name.innerHTML="Matchmaking Of The Amagami Household";
+                story.innerHTML="Kamihate Uryuu, orphaned since childhood, receives an invitation to stay at the local Shinto shrine. All he wanted was a quiet place to study so that he can fulfill his dream of making it into a top medical school, but after arriving there, he comes across three beautiful shrine maiden sisters... and the head priest requests that he marry one of them and take over the shrine. A tale of love and miracles is about to unfold!";
+                pic.src="top_img/amagami.png";
+                dr.innerHTML="Harem";
+            }
+        }
+    </script>
+</body>
+</html>
